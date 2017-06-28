@@ -1,2 +1,37 @@
 @import "variables";
 @import "grid";
+
+body{
+	font: 'Product-sans';
+}
+
+header{
+	img{
+		margin-top: $mt-10;
+	}
+	img.pointer{
+		float: right;
+	}
+	li{
+		display: inline-block;
+		text-align: center;
+		div{
+			padding: $padding;
+		}
+		div:hover{
+			border-bottom: 3px solid lightgray;
+		}
+	}
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+div.img-container{
+	margin-top: $mt-10;
+	img{
+		width: 95%;
+		margin-left: $ml-25;
+	}
+}
