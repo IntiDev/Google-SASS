@@ -38,3 +38,13 @@
 		width: anchoCols($numCols)
 	}
 }
+
+@function anchoCols($columns) {
+	@return percentage(($columns/12));
+}
+
+@for $numCols from 1 through 12{
+	.offset-#{$numCols}{
+		margin-left: anchoCols($numCols)
+	}
+}
