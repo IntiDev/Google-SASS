@@ -26,21 +26,28 @@
 	margin-top: $mt-5;
 }
 
+.ml-3{
+	margin-left: $ml-25;
+}
 .pointer{
 	cursor: pointer;
 }
 
 .date{
-		color: $date-light;
+	font-family: $font-secondary;
+	color: $date-light;
 }
 
 .fondoClaro{
 	background-color: #eeeeee;
 }
 
+.medio{
+	vertical-align: middle;
+}
 // ELEMENTOS HTML
 body{
-	font: 'Product-sans';
+	font-family: $font-main;
 }
 
 header{
@@ -55,9 +62,9 @@ header{
 		text-align: center;
 		div{
 			padding: $padding;
-		}
-		div:hover{
-			border-bottom: 4px solid $hover;
+			&:hover{
+				border-bottom: 4px solid $hover;
+			}
 		}
 	}
 }
@@ -66,7 +73,7 @@ div.img-container{
 	margin-top: $mt-5;
 	img{
 		width: 95%;
-		margin-left: $ml-25;
+		// margin-left: $ml-25;
 	}
 }
 
@@ -96,4 +103,17 @@ hr{
 
 a{
 	text-decoration: none;
+}
+
+#tarjetas{
+	span{
+		div{
+			img{
+				vertical-align: middle;
+			}
+			span{
+				vertical-align: middle;
+			}
+		}
+	}
 }
